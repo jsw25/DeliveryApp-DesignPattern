@@ -1,6 +1,6 @@
-package BurgerStore;
+package DeliveryFoodStore;
 
-public abstract class BurgerStore {
+public abstract class BurgerStore extends DeliveryFoodStore {
     // /*abstract getInstance(인자를 받는다.)*/ // 리턴 타입 => OrderMenuComponent(데코레이터 최상위 추상클래스)
     // 인자를 받아서 이 인자로 조건문 분기하도록한다!
     // 대신 예외처리를 꼭해줘야한다!

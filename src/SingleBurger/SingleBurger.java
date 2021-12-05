@@ -1,6 +1,6 @@
 package SingleBurger;
 
-import OrderMenuComponent.OrderMenuComponent;
+import OrderMenuComponent.OrderBurgerMenuComponent;
 import cheese.Cheese;
 import clam.Clams;
 import dough.Dough;
@@ -8,7 +8,7 @@ import pepperoni.Pepperoni;
 import sauce.Sauce;
 import veggies.Veggies;
 
-public abstract class SingleBurger extends OrderMenuComponent {
+public abstract class SingleBurger extends OrderBurgerMenuComponent {
     String name;
 
     Dough dough;

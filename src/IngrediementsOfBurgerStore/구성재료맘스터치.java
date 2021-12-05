@@ -1,34 +1,32 @@
 package IngrediementsOfBurgerStore;
 
 import cheese.Cheese;
-import cheese.MozzarellaCheese;
+import cheese.ReggianoCheese;
 import clam.Clams;
-import clam.FrozenClams;
+import clam.FreshClams;
 import dough.Dough;
-import dough.ThickCrustDough;
+import dough.ThinCrustDough;
 import pepperoni.Pepperoni;
 import pepperoni.SlicedPepperoni;
-import sauce.PlumTomatoSauce;
+import sauce.MarinaraSauce;
 import sauce.Sauce;
-import veggies.BlackOlives;
-import veggies.Eggplant;
-import veggies.Spinach;
-import veggies.Veggies;
+import veggies.*;
 
+//원래 가져와서 생성하는 것이었나?? -> 그런듯.. family 특성에 맞게 구분해주기 위해서
 public class 구성재료맘스터치 implements IngrediementsOfBurgerStore {
     @Override
     public Cheese createCheese() {
-        return new MozzarellaCheese();
+        return new ReggianoCheese();
     }
 
     @Override
     public Clams createClam() {
-        return new FrozenClams();
+        return new FreshClams();
     }
 
     @Override
     public Dough createDough() {
-        return new ThickCrustDough();
+        return new ThinCrustDough();
     }
 
     @Override
@@ -38,12 +36,12 @@ public class 구성재료맘스터치 implements IngrediementsOfBurgerStore {
 
     @Override
     public Sauce createSauce() {
-        return new PlumTomatoSauce();
+        return new MarinaraSauce();
     }
 
     @Override
     public Veggies[] createVeggies() {
-        Veggies[] veggies = {new BlackOlives(), new Eggplant(),new Spinach()};
+        Veggies[] veggies = {new Garlic(), new Mushroom(),new Onion(),new RedPepper()};
         return veggies;
     }
 }

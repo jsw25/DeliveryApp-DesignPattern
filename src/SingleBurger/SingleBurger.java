@@ -1,45 +1,48 @@
 package SingleBurger;
 
+import Bread.Bread;
 import OrderMenuComponent.OrderBurgerMenuComponent;
+import ToppingHam.ToppingHam;
+import Veggies.Veggies;
 import cheese.Cheese;
 import clam.Clams;
-import dough.Dough;
-import pepperoni.Pepperoni;
 import sauce.Sauce;
-import veggies.Veggies;
 
 public abstract class SingleBurger extends OrderBurgerMenuComponent {
-    String name;
+    private int cost; // toString하면서 계산된다.
+    // ---------------------------------------
+    protected String burgerName;
 
-    Dough dough;
-    Cheese cheese;
-    Sauce sauce;
-    Clams clam;
-    Pepperoni pepperoni;
-    Veggies[] veggies;
+    protected Bread bread;
+    protected Cheese cheese;
+    protected Sauce sauce;
+    protected Clams clam;
+    protected ToppingHam toppingHam;
+    protected Veggies[] veggies;
 
-    abstract void prepare();
+    public abstract void prepareBurgerIngredient();//abstract void prepare();
 
-    void bake(){
-        System.out.println("Bake for 25 minutes at 350");
-    }
-    void cut(){
+
+    //void bake(){System.out.println("Bake for 25 minutes at 350");}
+    /*void cut(){
         System.out.println("Cutting the pizza into diagonal slices");
     }
     void box(){
         System.out.println("Place pizza in official PizzaStore box");
     }
 
-    void setName(String name){
-        this.name = name;
+     */
+
+    public void setName(String name){
+        this.burgerName = name;
     }
-    String getName(){return this.name;}
+    public String getName(){return this.burgerName;}
 
     public String toString() {
         StringBuffer result = new StringBuffer();
-        result.append("---- " + name + " ----\n");
-        if (dough != null) {
-            result.append(dough);
+        result.append("---- " + burgerName + " ----\n");
+        if (bread != null) {
+            result.append(bread);
             result.append("\n");
         }
         if (sauce != null) {
@@ -63,8 +66,8 @@ public abstract class SingleBurger extends OrderBurgerMenuComponent {
             result.append(clam);
             result.append("\n");
         }
-        if (pepperoni != null) {
-            result.append(pepperoni);
+        if (toppingHam != null) {
+            result.append(toppingHam);
             result.append("\n");
         }
         return result.toString();

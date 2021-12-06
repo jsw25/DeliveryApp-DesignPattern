@@ -1,16 +1,16 @@
 package IngrediementsOfBurgerStore;
 
+import Bread.Bread;
+import Bread.HamburgerBuns;
+import ToppingHam.SlicedHam;
+import ToppingHam.ToppingHam;
+import Veggies.*;
 import cheese.Cheese;
 import cheese.ReggianoCheese;
 import clam.Clams;
 import clam.FreshClams;
-import dough.Dough;
-import dough.ThinCrustDough;
-import pepperoni.Pepperoni;
-import pepperoni.SlicedPepperoni;
 import sauce.MarinaraSauce;
 import sauce.Sauce;
-import veggies.*;
 
 //원래 가져와서 생성하는 것이었나?? -> 그런듯.. family 특성에 맞게 구분해주기 위해서
 public class 구성재료버거킹 implements IngrediementsOfBurgerStore {
@@ -25,13 +25,13 @@ public class 구성재료버거킹 implements IngrediementsOfBurgerStore {
     }
 
     @Override
-    public Dough createDough() {
-        return new ThinCrustDough();
+    public Bread createDough() {
+        return new HamburgerBuns();
     }
 
     @Override
-    public Pepperoni createPepperoni() {
-        return new SlicedPepperoni();
+    public ToppingHam createPepperoni() {
+        return new SlicedHam();
     }
 
     @Override

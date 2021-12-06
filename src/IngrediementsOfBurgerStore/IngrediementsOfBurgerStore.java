@@ -1,19 +1,19 @@
 package IngrediementsOfBurgerStore;
 
+import Bread.Bread;
+import ToppingHam.ToppingHam;
+import Veggies.Veggies;
 import cheese.Cheese;
 import clam.Clams;
-import dough.Dough;
-import pepperoni.Pepperoni;
 import sauce.Sauce;
-import veggies.Veggies;
 
 public interface IngrediementsOfBurgerStore {
-    public Dough createDough();
+    public Bread createDough();
     public Cheese createCheese();
     public Clams createClam();
     public Sauce createSauce();
     public Veggies[] createVeggies();
-    public Pepperoni createPepperoni();
+    public ToppingHam createPepperoni();
 
 }
 

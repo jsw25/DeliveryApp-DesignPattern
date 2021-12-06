@@ -1,20 +1,6 @@
 package SingleBurger;
 
-import IngrediementsOfBurgerStore.IngrediementsOfBurgerStore;
+public abstract class CheeseBurger extends SingleBurger {
 
-public class CheeseBurger extends SingleBurger {
-    // 이거는 각 종 피자에 속했으며, pizzaIngrediementFactory에서 제공했음..
-    IngrediementsOfBurgerStore ingrediementsOfBurgerStore;
-
-    public CheeseBurger(IngrediementsOfBurgerStore ingrediementsOfBurgerStore) {
-        this.ingrediementsOfBurgerStore = ingrediementsOfBurgerStore;
-    }
-
-    void prepare() {
-        System.out.println("Preparing " + name);
-        dough = ingrediementsOfBurgerStore.createDough();
-        sauce = ingrediementsOfBurgerStore.createSauce();
-        cheese = ingrediementsOfBurgerStore.createCheese();
-        veggies = ingrediementsOfBurgerStore.createVeggies();
-    }
+    public abstract void prepareBurgerIngredient();
 }

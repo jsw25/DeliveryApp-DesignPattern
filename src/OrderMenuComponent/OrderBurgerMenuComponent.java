@@ -1,6 +1,20 @@
 package OrderMenuComponent;
 
 public abstract class OrderBurgerMenuComponent extends OrderMenuComponent {
+    // 하는일??
+    private int cost; // 아직 까지는 계산이 될 것이 없다.
+    private boolean set; // 초기화 = false
+    private boolean sizeUp; // 초기화 = false
+
+    // 어디서 옮길 수 있을까?? => 초기화 작업??
+
+
+
+
+
+
+
+
 }
 /*
 확실하게 다 정하기!

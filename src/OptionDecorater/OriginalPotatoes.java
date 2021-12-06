@@ -2,10 +2,10 @@ package OptionDecorater;
 
 import OrderMenuComponent.OrderBurgerMenuComponent;
 
-public class OrangeFanta extends Fanta {
-    private static final int cost = 1000;// 정하는 것임!
+public class OriginalPotatoes extends FrenchFries{
+    private static final int cost = 1200;// 정하는 것임!
 
-    public OrangeFanta(OrderBurgerMenuComponent orderBurgerMenuComponent){
+    public OriginalPotatoes(OrderBurgerMenuComponent orderBurgerMenuComponent){
         this.orderBurgerMenuComponent = orderBurgerMenuComponent;
         totalCost+=cost;
     }

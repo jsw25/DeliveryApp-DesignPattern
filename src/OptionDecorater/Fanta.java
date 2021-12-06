@@ -1,4 +1,4 @@
 package OptionDecorater;
 
-public abstract class Fanta{
+public abstract class Fanta extends Beverage{
 }

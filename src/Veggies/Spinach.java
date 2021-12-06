@@ -1,4 +1,4 @@
-package veggies;
+package Veggies;
 
 public class Spinach implements Veggies {
 
